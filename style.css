@@ -34,15 +34,8 @@ button {
     color: red;
 }
 
-header{
-    position: stick;
-    text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: #000000fb;
-    background-color: #c62828d5;
-    margin-right: 500px;
-    margin-left: 500px;
-    border-radius: 4px;
-    border: 2px solid #b61e1e;
-    box-shadow: 5px 5px 10px #a01414;
+.titulo {
+  position: relative;
+  top: 250px;
+  color: #e53935;
 }

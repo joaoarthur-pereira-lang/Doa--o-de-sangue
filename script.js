@@ -14,7 +14,7 @@ document.getElementById("formDoacao").addEventListener("submit", function(e) {
     let msg = document.getElementById("mensagem");
     msg.innerHTML = "";
 
-    if (!nome.includes("")){
+    if (!nome.includes(" ")){
         return msg.innerHTML = "Digite nome e sobrenome";
     }
 
@@ -51,6 +51,13 @@ document.getElementById("formDoacao").addEventListener("submit", function(e) {
         telefone: telefone,
         cidade: cidade,
         estado: estado
-        
     }
+     doadores.push(doador);
 
+     console.log(doador);
+
+     msg.style.color = "green";
+     msg.innerHTML = "Cadastro realizado com sucesso!";
+
+     document.getElementById("formDoacao").reset();
+});
