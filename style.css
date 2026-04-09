@@ -11,3 +11,10 @@ form {
     margin: auto;
     border-radius: 10px;
 }
+
+input,select,button{
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+}
+
