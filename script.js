@@ -17,4 +17,40 @@ document.getElementById("formDoacao").addEventListener("submit", function(e) {
     if (!nome.includes("")){
         return msg.innerHTML = "Digite nome e sobrenome";
     }
-    
+
+    if (!email.includes("")){
+        return msg.innerHTML = "Email inválido";
+    }
+
+    if (idade < 16){
+        return msg.innerHTML = "Idade mínima é 16 anos ";
+    }
+
+    if (peso < 50){
+        return msg.innerHTML = "Peso mínimo é 50kg";
+    }
+
+    if (tipo ===""){
+        return msg.innerHTML = "Selecione o tipo Sanguineo";
+    }
+
+    if (!/^[0-9]+$/.test(telefone)){
+        return msg.innerHTML = "O telefone deve conter apenas números";
+    }
+
+    if (!nome || !email || !idade || !peso || !telefone || !cidade || !estado ){
+        return msg.innerHTML = "Prencha todos os campos";
+    }
+
+    let doador = {
+        nome: nome,
+        email: email,
+        idade: idade,
+        peso: peso,
+        tipoSanguineo: tipo,
+        telefone: telefone,
+        cidade: cidade,
+        estado: estado
+        
+    }
+
